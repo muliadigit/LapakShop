@@ -1,12 +1,3 @@
-
-<?php 
-  session_start();
-  $page = isset($_GET["page"]) ? $_GET["page"] : "beranda";
-  if ($page == "logout"){
-    unset($_SESSION["pengguna"]);
-    header("Location: ?page=beranda");
-  }
-?>
 <!DOCTYPE html>
 <html lang="id">
 <head>
